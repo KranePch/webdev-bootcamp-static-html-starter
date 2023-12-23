@@ -10,6 +10,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="bg-wd-black text-white">
@@ -22,6 +25,7 @@
   </header>
 
   <main class="px-8 flex flex-col">
+    <!-- Feature Section -->
     <div class="w-full text-winter-sky text-4xl font-semibold flex items-center gap-10 my-12
     before:content-[''] before:h-px before:bg-winter-sky before:grow
     after:content-[''] after:h-px after:bg-winter-sky after:grow">Features</div>
@@ -59,23 +63,51 @@
       </div>
     </section>
 
-
-    <section>
-      <div class="w-full text-winter-sky text-4xl font-semibold flex items-center gap-10 my-12
+    <!-- Works Section -->
+    <div class="w-full text-winter-sky text-4xl font-semibold flex items-center gap-10 my-12
     before:content-[''] before:h-px before:bg-winter-sky before:grow
     after:content-[''] after:h-px after:bg-winter-sky after:grow">My Works</div>
-    </section>
 
     <section>
-      <div class="w-full text-winter-sky text-4xl font-semibold flex items-center gap-10 my-12
+      <div class="grid grid-cols-3 gap-6 w-full place-content-center">
+        <img src="../assets/grid/image-bootcamp-1.png" alt="grid image 1" class="w-full object-cover" />
+        <img src="../assets/grid/image-bootcamp-2.png" alt="grid image 2" class="w-full object-cover" />
+        <img src="../assets/grid/image-bootcamp-3.png" alt="grid image 3" class="w-full object-cover" />
+        <img src="../assets/grid/image-bootcamp-4.png" alt="grid image 4" class="w-full object-cover" />
+        <img src="../assets/grid/image-bootcamp-5.png" alt="grid image 5" class="w-full object-cover" />
+        <img src="../assets/grid/image-bootcamp-6.png" alt="grid image 6" class="w-full object-cover" />
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <div class="w-full text-winter-sky text-4xl font-semibold flex items-center gap-10 my-12
     before:content-[''] before:h-px before:bg-winter-sky before:grow
     after:content-[''] after:h-px after:bg-winter-sky after:grow">More Gallery</div>
-    </section>
+
+
 
   </main>
 
-  <footer>
-    <section></section>
+  <footer class="flex flex-col text-white justify-end w-full px-8">
+    <section class="flex justify-between">
+      <div class="flex flex-col gap-6">
+        <h3>Jane Doe</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ipsam reiciendis cum, tempora
+          accusamus error at quae dolores totam maxime? Repellat impedit similique, voluptatibus perspiciatis autem iste
+          neque facilis reprehenderit!
+        </p>
+        <form action="" class="flex flex-col gap-4">
+          <input type="email" name="email" placeholder="Enter your email" class="py=[14px] pl-4" />
+          <button type="submit" class="bg-winter-darksky text-#010101 px=[33px] py-3 w-1/2">Subscribe<i
+              class="fa-solid fa-arrow-right"></i></button>
+        </form>
+      </div>
+      <div>
+        <h3>Get in touch</h3>
+      </div>
+    </section>
+
     <section></section>
   </footer>
 </body>
