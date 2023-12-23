@@ -82,7 +82,7 @@
     <!-- Gallery Section -->
     <div class="w-full text-winter-sky text-4xl font-semibold flex items-center gap-10 my-12
     before:content-[''] before:h-px before:bg-winter-sky before:grow
-    after:content-[''] after:h-px after:bg-winter-sky after:grow">More Gallery</div>
+    after:content-[''] after:h-px after:bg-winter-sky after:grow">More Photo</div>
 
 
 
@@ -90,26 +90,46 @@
 
   <footer class="flex flex-col text-white justify-end w-full px-8">
     <section class="flex justify-between">
-      <div class="flex flex-col gap-6">
-        <h3>Jane Doe</h3>
-        <p>
+      <div class="flex flex-col gap-6 w-2/6">
+        <h3 class="font-bold text-[32px]">Jane Doe</h3>
+        <p class="font-normal">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ipsam reiciendis cum, tempora
           accusamus error at quae dolores totam maxime? Repellat impedit similique, voluptatibus perspiciatis autem iste
           neque facilis reprehenderit!
         </p>
-        <form action="" class="flex flex-col gap-4">
-          <input type="email" name="email" placeholder="Enter your email" class="py=[14px] pl-4" />
-          <button type="submit" class="bg-winter-darksky text-#010101 px=[33px] py-3 w-1/2">Subscribe<i
-              class="fa-solid fa-arrow-right"></i></button>
-        </form>
+        <form action="" class="flex flex-col gap-4" onsubmit="onSubmit(event)">
+          <input type="email" name="email" id="emailInput" placeholder="Enter your email" class="py=[14px] pl-4 text-winter-dark" />
+          <button type="submit" class="bg-winter-darksky text-#010101 px=[33px] py-3 w-1/2">Subscribe<i class="fa-solid fa-arrow-right"></i></button>
+      </form>
+      
       </div>
-      <div>
-        <h3>Get in touch</h3>
+
+      <div class="flex flex-col gap-6 w-2/6">
+        <h3 class="font-bold text-[32px]">Get in touch</h3>
+        <p class="font-normal">
+          MBK Tower 20th Floor, 444, ถ. พญาไท แขวงวังใหม่ เขตปทุมวัน กรุงเทพมหานคร 10330
+        </p>
+        <p class="font-normal">
+          Email: test@gmail.com
+        </p>
+        <div class="flex gap-4">
+          <i class="fa-brands fa-facebook fa-2xl text-wd-brand"></i>
+          <i class="fa-brands fa-instagram fa-2xl text-wd-brand"></i>
+          <i class="fa-brands fa-x-twitter fa-2xl text-wd-brand"></i>
+        </div>
       </div>
     </section>
 
-    <section></section>
+    <section class="border-t-2 border-winter-sky  py-12 mt-12">
+      <p class="text-center text-white font-bold">© 2023, John Doe. All Rights Reserved.</p>
+    </section>
   </footer>
 </body>
+
+<script>
+  function onSubmit(e) {
+    alert(`You: ${e.target.elements.email.value}`);
+  }
+</script>
 
 </html>

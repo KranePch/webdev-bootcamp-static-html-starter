@@ -13,6 +13,7 @@ module.exports = {
         "winter-darksky": "#427D9D",
         "winter-light": "#9BBEC8",
         "winter-sky": "#DDF2FD",
+        "wd-brand": "#898989",
       },
       backgroundImage: {
         "hero-pattern":
